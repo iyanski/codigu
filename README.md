@@ -1,2 +1,2 @@
-# codigu-master
+# Codigu
 Official Website of Codigu
