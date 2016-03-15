@@ -8,8 +8,8 @@
 
 body{
     overflow: hidden;
-
-    &.cd-loaded{
+ 
+    &.cd-initialized{
         overflow: auto;
     }
 }
@@ -20,19 +20,19 @@ body{
 }
 
 .cd-loader{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $brand-dark;
+    position:           absolute;
+    width:              100%;
+    height:             100%;
+    background-color:   $brand-dark;
     @include transform( translateY(0) );
 
 
     .cd-loading-brand{
-        position: absolute;
-        top: 50%;
-        left: 0; 
-        right:  0;
-        margin: auto;
+        position:   absolute;
+        top:        50%;
+        left:       0; 
+        right:      0;
+        margin:     auto;
         @include transform( translateY(-50%));
     }
 } 
@@ -52,54 +52,54 @@ body{
 }
 
 .cd-primary {
-    position: absolute;
-    top: 20px;
-    bottom: 20px; 
-    right: 20px;
-    left: 20px;
+    position:   absolute;
+    top:        20px;
+    bottom:     20px; 
+    right:      20px;
+    left:       20px;
     @include transform( translateY(100%) );
 
-   @media (min-width: 544px ) and (min-height: 767px) {
-     top: 30px;
-    bottom: 30px; 
-    right: 30px;
-    left: 30px;
+   @media (min-width: 544px ) and (min-height: 544px) {
+    top:        30px;
+    bottom:     30px; 
+    right:      30px;
+    left:       30px;
    }
 
     @media (min-width: 768px) and (min-height: 600px) {
-        top: 100px;
+        top:    100px;
         bottom: 100px;
-        right: 100px;
-        left: 100px;
+        right:  100px;
+        left:   100px;
     }
 }
 
 .cd-hero {
-    position: absolute;
-    top: 50%;
+    position:   absolute;
+    top:        50%;
     @include transform( translateY(-50%));
 
     .cd-hero-title {
-        color: $brand-dark;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        display: inline-block;
+        color:          $brand-dark;
+        font-weight:    700;
+        font-size:      24px;
+        line-height:    28px;
+        display:        inline-block;
 
         @media (min-width: 544px ) and (min-height: 767px) {
-            font-size: 40px;
-            line-height: 36px;
+            font-size:      40px;
+            line-height:    36px;
         } 
         @media (min-width: 768px ) and (min-height: 600px) {
-            font-size: 50px;
-            line-height: 46px;
+            font-size:      50px;
+            line-height:    46px;
         }
     }
     .cd-hero-desc {
-        display: block;
-        padding-top: 20px;
-        font-weight: bold;
-        font-size: 13px;
+        display:        block;
+        padding-top:    20px;
+        font-weight:    bold;
+        font-size:      13px;
 
         @include media-breakpoint-up(sm) {
           font-size: 16px;
@@ -108,12 +108,24 @@ body{
 }
 
 .cd-footer{
-  position: absolute;
-  bottom: 0;
+
+    .cd-footer-desc,
+    .cd-refresh-button{
+      position:     absolute;
+      bottom:       0;
+    }
 
   .cd-footer-desc{
-    font-size: 13px;
-    font-weight: bold; 
-    color: rgba($brand-dark, 0.8);
+    font-size:      13px;
+    font-weight:    bold; 
+    color:          rgba($brand-dark, 0.8);
+    float:          left;
+    left:           0;
   }
-}
+
+  .cd-refresh-button{
+    right:          0;
+    display:        none;
+  }
+} 
+

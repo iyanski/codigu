@@ -10,13 +10,13 @@
 include "header.php"; ?>
 
 <div class="cd-loader">
-   <img src="img/codigu-brand-light.svg" alt="" class="cd-loading-brand" width="150">
+   <img src="img/cd-brand-light.svg" alt="" class="cd-loading-brand" width="100">
 </div>
 
 <div id="primary" class="cd-primary">
 	<header role="banner">
         <a href="#0">
-        	<img src="img/codigu-brand-dark.svg" alt="" class="cd-brand">
+        	<img src="img/cd-brand-dark.svg" alt="" class="cd-brand">
         </a>
     </header>
 
@@ -27,6 +27,7 @@ include "header.php"; ?>
 
     <footer class="cd-footer" role="contentinfo">
     	<span class="cd-footer-desc">Codigu&trade; &mdash; Building What's Next</span>
+        <span class="cd-refresh-button"><img src="img/cd-refresh.svg" alt="" width="20" height="20"></span>
     </footer>
 </div>
 

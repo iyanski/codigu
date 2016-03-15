@@ -1,6 +1,6 @@
 (function($) {
 
-     /*
+    /*
      * Loading State */
     setTimeout(function() {
         $("body").addClass("cd-loading")
@@ -37,7 +37,7 @@
         return false;
     });
 
-     /*
+    /*
      * Offcanvas Menu 
      * Replaced Bootstrap's native collapsable menu */
 
@@ -49,6 +49,18 @@
         }
     }
 
+    // Touch Device Detection
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
+    if (isTouchDevice) {
+        $('.cd-hero-desc').css('display', 'none');
+        $('.cd-refresh-button').css('display', 'block');
+    }
+    if (isTouchDevice) {
+        $('.cd-refresh-button').click(codeTheory);
+    }
+
+
+
     function codeTheory() {
 
         var links = [{
@@ -59,15 +71,15 @@
             'text': 'Dont hate monday. Make monday hate you.'
         }, {
             'text': 'Just do it.'
-        },{
+        }, {
             'text': 'Hey! You got this.'
-        },{
+        }, {
             'text': 'Just kick monday in the face.'
-        },{
+        }, {
             'text': 'Today, be EPIC.'
-        },{
+        }, {
             'text': 'Be better than you were yesterday.'
-        },{
+        }, {
             'text': 'You are a superfly success machine.'
         }];
 
