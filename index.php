@@ -11,8 +11,7 @@ include "header.php"; ?>
 
 <div class="cd-loader">
     <div class="cd-loader-inner">
-        <img src="img/cd-brand-light.svg" alt="" class="cd-loading-brand m-b-2" width="100">
-        <p class="cd-randomcode">Codigu&trade; &mdash; Building What's Next</p>
+        <img src="img/cd-brand-light.svg" alt="" class="cd-loading-brand" width="100">
    </div>
 </div>
 
