@@ -10,7 +10,10 @@
 include "header.php"; ?>
 
 <div class="cd-loader">
-   <img src="img/cd-brand-light.svg" alt="" class="cd-loading-brand" width="100">
+    <div class="cd-loader-inner">
+        <img src="img/cd-brand-light.svg" alt="" class="cd-loading-brand m-b-2" width="100">
+        <p class="cd-randomcode">Codigu&trade; &mdash; Building What's Next</p>
+   </div>
 </div>
 
 <div id="primary" class="cd-primary">
@@ -21,7 +24,7 @@ include "header.php"; ?>
     </header>
 
     <div class="cd-hero">
-    	<h1 id="cd-hero-title" class="cd-hero-title">Codigu&trade; &mdash; Building What's Next</h1>
+    	<h1 id="cd-hero-title" class="cd-hero-title cd-randomcode">Codigu&trade; &mdash; Building What's Next</h1>
     	<span class="cd-hero-desc">Press spacebar for more</span>
     </div>
 

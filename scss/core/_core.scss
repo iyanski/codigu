@@ -21,20 +21,23 @@ body{
 
 .cd-loader{
     position:           absolute;
-    width:              100%;
+    width:              100%; 
     height:             100%;
     background-color:   $brand-dark;
     @include transform( translateY(0) );
 
 
-    .cd-loading-brand{
+    .cd-loader-inner{
         position:   absolute;
         top:        50%;
         left:       0; 
         right:      0;
         margin:     auto;
+        text-align: center;
+        color:      $brand-white;
         @include transform( translateY(-50%));
     }
+
 } 
 
 

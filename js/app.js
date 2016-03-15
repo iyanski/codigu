@@ -87,8 +87,8 @@
         var randomcode = Math.floor(Math.random() * (links.length));
 
         function printCode() {
-            var el = document.getElementById('cd-hero-title');
-            el.innerHTML = links[randomcode].text;
+            var el = $('.cd-randomcode');
+            el.text(links[randomcode].text)
         };
 
         printCode();
