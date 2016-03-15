@@ -9,6 +9,9 @@
 
 include "header.php"; ?>
 
+<div class="cd-loader">
+   <img src="img/codigu-brand-light.svg" alt="" class="cd-loading-brand" width="150">
+</div>
 
 <div id="primary" class="cd-primary">
 	<header role="banner">

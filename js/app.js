@@ -1,5 +1,15 @@
 (function($) {
 
+     /*
+     * Loading State */
+    setTimeout(function() {
+        $("body").addClass("cd-loading")
+    }, 200), setTimeout(function() {
+        $("body").addClass("cd-loaded")
+    }, 2200), setTimeout(function() {
+        $("body").addClass("cd-initialized")
+    }, 3600)
+
     /*
      * Add Smooth Scrolling Transition */
     $('a.target[href^="#"]').click(function(event) {
