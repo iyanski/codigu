@@ -50,6 +50,7 @@
     }
 
     // Touch Device Detection
+    document.addEventListener("touchstart", function(){}, true);
     var isTouchDevice = 'ontouchstart' in document.documentElement;
     if (isTouchDevice) {
         $('.cd-hero-desc').css('display', 'none');
@@ -83,14 +84,14 @@
             'text': 'You are a superfly success machine.'
         }];
 
-        var randomlink = Math.floor(Math.random() * (links.length));
+        var randomcode = Math.floor(Math.random() * (links.length));
 
-        function printlink() {
-            var linkElem = document.getElementById('cd-hero-title');
-            linkElem.innerHTML = links[randomlink].text;
+        function printCode() {
+            var el = document.getElementById('cd-hero-title');
+            el.innerHTML = links[randomcode].text;
         };
 
-        printlink();
+        printCode();
     }
 
 })(jQuery);
