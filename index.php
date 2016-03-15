@@ -24,7 +24,7 @@ include "header.php"; ?>
 
     <div class="cd-hero">
     	<h1 id="cd-hero-title" class="cd-hero-title cd-randomcode">Codigu&trade; &mdash; Building What's Next</h1>
-    	<span class="cd-hero-desc">Press spacebar for more</span>
+    	<div class="cd-hero-desc"><span class="cd-detect-device" data-refresh="Hit refresh icon">Press spacebar</span> for more about us</div>
     </div>
 
     <footer class="cd-footer" role="contentinfo">

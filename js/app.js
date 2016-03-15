@@ -51,44 +51,50 @@
 
     // Touch Device Detection
     document.addEventListener("touchstart", function(){}, true);
-    var isTouchDevice = 'ontouchstart' in document.documentElement;
+    var isTouchDevice   = 'ontouchstart' in document.documentElement;
+    var refreshButton   = $('.cd-refresh-button');
+
     if (isTouchDevice) {
-        $('.cd-hero-desc').css('display', 'none');
-        $('.cd-refresh-button').css('display', 'block');
-    }
-    if (isTouchDevice) {
-        $('.cd-refresh-button').click(codeTheory);
+        var el      =   $('.cd-hero-desc').find('.cd-detect-device');
+            data    =   el.data('refresh');
+
+        el.text(data);
+        refreshButton.css('display', 'block');
     }
 
-
+    if (isTouchDevice) {
+        refreshButton.click(codeTheory);
+    }
 
     function codeTheory() {
 
-        var links = [{
-            'text': 'Everything is awesome. You are awesome.'
+        var code = [{
+            "text": "Building creative projects."
         }, {
-            'text': 'Make things happen.'
+            "text": "Sketch and Photoshop."
         }, {
-            'text': 'Dont hate monday. Make monday hate you.'
+            "text": "Awesome and driven individuals."
         }, {
-            'text': 'Just do it.'
+            "text": "Git and Github FTW"
         }, {
-            'text': 'Hey! You got this.'
+            "text": "Work and Play Environment."
         }, {
-            'text': 'Just kick monday in the face.'
+            "text": "Let's kick monday in the face."
         }, {
-            'text': 'Today, be EPIC.'
+            "text": "Keeping it simple and clean."
         }, {
-            'text': 'Be better than you were yesterday.'
+            "text": "Creative minds."
         }, {
-            'text': 'You are a superfly success machine.'
+            "text": "Coffee and Pizza."
+        }, {
+            "text": "Building what's next."
         }];
 
-        var randomcode = Math.floor(Math.random() * (links.length));
+        var randomcode = Math.floor(Math.random() * (code.length));
 
         function printCode() {
             var el = $('.cd-randomcode');
-            el.text(links[randomcode].text)
+            el.html(code[randomcode].text)
         };
 
         printCode();
